@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
 import perfil from "../assets/perfil.jpeg";
 
 function Home() {
@@ -62,7 +62,7 @@ function Home() {
             <span className="text-white">|</span> {/* Cursor piscando */}
           </motion.span>
         </p>
-        <div className="flex gap-4 mt-6">
+        <div className="flex flex-wrap gap-4 mt-6">
           <a
             href="https://www.linkedin.com/in/alex-sander-dev/"
             target="_blank"
@@ -80,6 +80,16 @@ function Home() {
           >
             <FaGithub className="text-xl" />
             GitHub
+          </a>
+          <a
+            href="/curriculo.pdf" // Substitua pelo caminho real do seu currículo
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-5 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition duration-300 shadow-lg"
+            download="alex_britto_curriculo.pdf" // Nome que será usado ao baixar
+          >
+            <FaFileDownload className="text-xl" />
+            Currículo
           </a>
         </div>
       </motion.div>
