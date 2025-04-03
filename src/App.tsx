@@ -1,10 +1,10 @@
 import Footer from "./components/Footer";
-
+import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Home from "./pages/home";
-import Navbar from "./components/Navbar";
+import Stacks from "./pages/Stacks";
 
 function App() {
   return (
@@ -16,6 +16,9 @@ function App() {
         </section>
         <section id="about">
           <About />
+        </section>
+        <section id="stacks">
+          <Stacks />
         </section>
         <section id="projects">
           <Projects />
