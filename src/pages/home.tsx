@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { FaLinkedin, FaGithub, FaFileDownload } from "react-icons/fa";
 import perfil from "../assets/perfil.jpeg";
+import cv from "../assets/Alex_fullstack.pdf";
 
 function Home() {
   const roles = ["Frontend", "Backend", "FullStack"];
@@ -82,14 +83,14 @@ function Home() {
             GitHub
           </a>
           <a
-            href="/curriculo.pdf" // Substitua pelo caminho real do seu currículo
+            href={cv} // Substitua pelo caminho real do seu currículo
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-5 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition duration-300 shadow-lg"
             download="alex_britto_curriculo.pdf" // Nome que será usado ao baixar
           >
             <FaFileDownload className="text-xl" />
-            Currículo
+            CV
           </a>
         </div>
       </motion.div>
