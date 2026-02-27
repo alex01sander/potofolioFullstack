@@ -1,4 +1,3 @@
-import alogin from "../assets/site_pessoal.png";
 import geo from "../assets/geolocalizacao.png";
 import gemini from "../assets/gemini.png";
 import stockly from "../assets/stockly.png";
@@ -15,49 +14,6 @@ function Projects() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Projeto 1 */}
-        <div className="bg-gradient-to-br from-stone-800 to-stone-900 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col h-full">
-          <div className="p-5">
-            <h3 className="text-xl font-semibold text-white mb-3">
-              Site Pessoal
-            </h3>
-          </div>
-
-          <div className="w-full px-4">
-            <img
-              src={alogin}
-              alt="Imagem do Site Pessoal"
-              className="w-full h-64 object-contain rounded-lg shadow-md"
-            />
-          </div>
-
-          <div className="p-5 flex-grow flex flex-col">
-            <p className="text-gray-300 mt-3 text-sm">Landing Page Pessoal</p>
-            <p className="text-purple-400 text-xs mt-1">
-              Stack: React, TailwindCSS
-            </p>
-
-            <div className="mt-auto pt-5 flex justify-center gap-4">
-              <a
-                href="https://alogin.com.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2 rounded-full bg-purple-500 text-white hover:bg-purple-600 transition-all text-sm font-medium shadow-md hover:shadow-lg"
-              >
-                Demo
-              </a>
-              <a
-                href="https://github.com/alex01sander/alogin"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-2 rounded-full border border-white text-white hover:bg-white hover:text-stone-900 transition-all text-sm font-medium shadow-md hover:shadow-lg"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </div>
-
         {/* Projeto 2 */}
         <div className="bg-gradient-to-br from-stone-800 to-stone-900 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col h-full">
           <div className="p-5">
